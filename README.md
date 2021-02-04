@@ -2,6 +2,9 @@
 This repo contains python scripts for executing operations on AWS
 
 ## S3 Operations 
+Part 1: Will showcase s3 execution
+
+### Printing out a list of all the bucket names on S3
 ```python
 # Objective: Print out all of the S3 bucket names from your AWS account. 
 import boto3
@@ -18,7 +21,7 @@ def viewListBuckets():
 print('Please provide a print out of all buckets in our AWS account..\n')
 viewListBuckets()
 ```
-
+### Creating a new bucket on S3
 ```python
 import boto3
 
@@ -35,6 +38,7 @@ my_new_bucket = input("Please enter a bucket name for creation: ")
 bucketCreation(my_new_bucket)
 ```
 
+### Deleting a bucket from S3
 ```python
 import boto3
 
